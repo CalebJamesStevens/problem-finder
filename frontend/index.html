@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problem Trend Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Stack Overflow Problem Trend Finder</h1>
+      <p>Explore what developers are struggling with based on real Stack Overflow data.</p>
+    </header>
+
+    <section class="search-panel">
+      <label for="query">Search query</label>
+      <div class="search-row">
+        <input id="query" type="text" placeholder="e.g. azure, web development" />
+        <button id="analyze">Analyze</button>
+      </div>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="results" id="results" hidden>
+      <div class="card">
+        <h2>Top Keywords</h2>
+        <ul id="keywords"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Topics</h2>
+        <div id="topics"></div>
+      </div>
+
+      <div class="card">
+        <h2>Trends (JSON)</h2>
+        <pre id="trends"></pre>
+      </div>
+
+      <div class="card">
+        <h2>High-Pain Unanswered Questions</h2>
+        <ul id="pain-points"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Raw JSON</h2>
+        <pre id="raw"></pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
